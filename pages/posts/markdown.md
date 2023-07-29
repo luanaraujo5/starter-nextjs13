@@ -1,99 +1,47 @@
 ---
-title: Exemplos de Markdown
-date: 2023/07/28
-description: Ver exemplos.
-tag: web development
-author: You
+title: Comandos GIT Utilizados nesse projeto.
+date: 2023/07/29
+description: Entendendo os principais comandos e Git Flow.
+tag: Web Development
+author: Luan Araujo
 ---
 
-# Markdown Examples
+# Comando Git Essenciais & Git Flow
 
-## h2 Heading
+## Principais Comandos Git:
+###
 
-### h3 Heading
+1. `git init`: Inicializa um novo repositório Git no diretório atual.
 
-#### h4 Heading
+2. `git clone [URL]`: Clona um repositório existente para o seu computador.
 
-##### h5 Heading
+3. `git add [arquivo]`: Adiciona as alterações do arquivo para a área de preparação (staging).
 
-###### h6 Heading
+4. `git commit -m "mensagem"`: Grava as alterações adicionadas na área de preparação no histórico do repositório.
 
-## Emphasis
+5. `git push`: Envia as alterações do repositório local para o repositório remoto.
 
-**This is bold text**
+6. `git pull`: Obtém as alterações do repositório remoto para o repositório local e as mescla com o seu código.
 
-_This is italic text_
+## Git Flow
 
-~~Strikethrough~~
+O Git Flow é uma metodologia de controle de versão que fornece um fluxo de trabalho estruturado para gerenciar branches e releases em projetos de software. Ele define as branches `main` e `develop` como pilares do desenvolvimento, e estabelece processos claros para novas funcionalidades, correções de bugs e lançamentos.
 
-## Blockquotes
+Principais Branches do Git Flow:
 
-> Develop. Preview. Ship. – Vercel
+- `main`: Contém o código estável, pronto para ser implantado em produção.
+- `develop`: Branch de desenvolvimento onde novas funcionalidades são integradas e testadas.
 
-## Lists
+Branches Adicionais:
 
-Unordered
+- `feature`: Para o desenvolvimento de novas funcionalidades.
+- `hotfix`: Para correções rápidas de bugs em produção.
+- `release`: Para preparar e testar lançamentos.
 
-- Lorem ipsum dolor sit amet
-- Consectetur adipiscing elit
-- Integer molestie lorem at massa
-
-Ordered
-
-1. Lorem ipsum dolor sit amet
-2. Consectetur adipiscing elit
-3. Integer molestie lorem at massa
-
-## Code
-
-Inline `code`
-
-```
-export default function Nextra({ Component, pageProps }) {
-  return (
-    <>
-      <Head>
-        <link
-          rel="alternate"
-          type="application/rss+xml"
-          title="RSS"
-          href="/feed.xml"
-        />
-        <link
-          rel="preload"
-          href="/fonts/Inter-roman.latin.var.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-      </Head>
-      <Component {...pageProps} />
-    </>
-  )
-}
-```
-
-## Tables
-
-| **Option** | **Description**                                                                                                             |
-| ---------- | --------------------------------------------------------------------------------------------------------------------------- |
-| First      | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. |
-| Second     | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. |
-| Third      | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. |
+O Git Flow promove uma colaboração organizada e mantém o código estável ao longo do ciclo de desenvolvimento. É uma abordagem popular entre equipes de desenvolvimento que valorizam uma estratégia sólida de controle de versão.
 
 ## Links
 
 - [Next.js](https://nextjs.org)
 - [Nextra](https://nextra.vercel.app/)
-- [Vercel](http://vercel.com)
-
-### Footnotes
-
-- Footnote [^1].
-- Footnote [^2].
-
-[^1]: Footnote **can have markup**
-
-    and multiple paragraphs.
-
-[^2]: Footnote text.
+- [Git Docs](https://git-scm.com/docs/git/pt_BR)
